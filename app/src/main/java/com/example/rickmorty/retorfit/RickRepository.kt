@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
 
-object RickService {
+object RickRepository {
     private val retrofit by lazy(LazyThreadSafetyMode.NONE) { provideRetrofit() }
     val rickApi by lazy(LazyThreadSafetyMode.NONE) {
         retrofit.create<RickApi>()

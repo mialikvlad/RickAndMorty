@@ -1,19 +1,12 @@
 package com.example.rickmorty.fragment
 
-import android.content.IntentSender
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentContainer
 import androidx.viewbinding.ViewBinding
 import com.google.android.material.snackbar.Snackbar
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.HttpException
-import retrofit2.Response
-import java.util.zip.Inflater
 
 abstract class BaseFragment<VB : ViewBinding> : Fragment() {
     protected var _binding: VB? = null
@@ -34,7 +27,7 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         return createBinding(inflater, container, savedInstanceState)
             .also {
                 _binding = it
@@ -46,28 +39,6 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
         super.onDestroyView()
         onViewCleared()
         _binding = null
-    }
-
-    protected fun <T> Call<T>.enqueueRequest(
-        onRequestFinished: () -> Unit = {},
-        result: (T) -> Unit
-    ): Call<T> = apply {
-        enqueue(object : Callback<T> {
-            override fun onResponse(call: Call<T>, response: Response<T>) {
-                if (response.isSuccessful) {
-                    response.body()?.let(result) ?: handleError(GENERIC_ERROR_MESSAGE)
-                } else {
-                    handleError(HttpException(response))
-                }
-                onRequestFinished()
-            }
-
-            override fun onFailure(call: Call<T>, t: Throwable) {
-                handleError(t)
-                onRequestFinished()
-            }
-
-        })
     }
 
     protected fun handleError(error: Throwable) {
