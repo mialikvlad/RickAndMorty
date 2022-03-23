@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Rick&amp;Morty</string>
+    <string name="MAPS_API_KEY">AIzaSyAW5RiRSFYYR0GalQODGjh_QH2mdRrNMu4</string>
+    <string name="city">City</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="dark_mode">Dark Mode</string>
 </resources>

@@ -3,12 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/ic_character.xml" value="0.3828125" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/ic_icon_rick.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/ic_icon_rick2.xml" value="0.3828125" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/ic_map.xml" value="0.3828125" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/ic_setting.xml" value="0.3828125" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/ic_splash_screen.xml" value="0.3828125" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/item_selector.xml" value="0.262037037037037" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/item_selector_back.xml" value="0.262037037037037" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/rounded_backgrounded_nav.xml" value="0.262037037037037" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/shape_round_rectangle.xml" value="0.2703125" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/shape_rounded_rectangle.xml" value="0.2703125" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/drawable/splash_image.xml" value="0.3828125" />
         <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
-        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_details.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_list.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/item_character.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/bottom_sheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_container.xml" value="0.22" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_details.xml" value="0.264" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_launch.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_list.xml" value="0.33" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_map.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_mode.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/fragment_settings.xml" value="0.33" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/item_character.xml" value="0.26744186046511625" />
         <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/layout/item_loading.xml" value="0.3875" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/menu/bottom_navigarion_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
         <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/menu/menu_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vlad_/AndroidStudioProjects/RickMorty/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17037037037037037" />
       </map>
     </option>
   </component>

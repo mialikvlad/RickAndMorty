@@ -3,26 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/list">
+    app:startDestination="@id/container_fragment">
 
     <fragment
-        android:id="@+id/list"
-        android:name="com.example.rickmorty.fragment.ListFragment"
-        tools:layout="@layout/fragment_list">
+        android:id="@+id/container_fragment"
+        android:name="com.example.rickmorty.presentation.fragment.ContainerFragment"
+        android:label="fragment_container"
+        tools:layout="@layout/fragment_container"
+    />
 
-        <action
-            android:id="@+id/to_details"
-            app:destination="@+id/details"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/details"
-        android:name="com.example.rickmorty.fragment.DetailsFragment"
-        tools:layout="@layout/fragment_details">
-
-        <argument
-            android:name="name"
-            app:argType="string"
-            />
-    </fragment>
 </navigation>
+
+    <!--<fragment
+            android:id="@+id/menu"
+            android:name="com.example.rickmorty.presentation.fragment.ContainerFragment"
+            tools:layout="@layout/fragment_launch">
+
+            <action
+                android:id="@+id/to_night_mode"
+                app:destination="@id/night_mode"/>
+
+            <action
+                android:id="@+id/to_list"
+                app:destination="@id/list"/>
+
+            <action
+                android:id="@+id/to_map"
+                app:destination="@id/map"/>
+
+        </fragment>
+
+        <fragment
+            android:id="@+id/list"
+            android:name="com.example.rickmorty.presentation.list.ListFragment"
+            tools:layout="@layout/fragment_list">
+
+            <action
+                android:id="@+id/to_details"
+                app:destination="@+id/details"/>
+        </fragment>
+
+        <fragment
+            android:id="@+id/details"
+            android:name="com.example.rickmorty.presentation.details.DetailsFragment"
+            tools:layout="@layout/fragment_details">
+
+            <argument
+                android:name="name"
+                app:argType="string"
+                />
+        </fragment>
+
+        <fragment
+            android:id="@+id/night_mode"
+            android:name="com.example.rickmorty.presentation.fragment.ModeFragment"
+            tools:layout="@layout/fragment_mode"/>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.example.rickmorty.presentation.fragment.MapFragment"
+            tools:layout="@layout/fragment_map"/>-->

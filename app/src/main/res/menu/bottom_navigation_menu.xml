@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_rick2"
+        android:title="Rick List"/>
+    <item
+        android:id="@+id/map_fragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_map"
+        android:title="Map"/>
+    <item
+        android:id="@+id/settings_fragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_setting"
+        android:title="Settings"/>
+</menu>

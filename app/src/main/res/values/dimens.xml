@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="containerFragmentDP">0dp</dimen>
+    <dimen name="detailsTextSize">20sp</dimen>
+    <dimen name="paddingList">20dp</dimen>
+    <dimen name="parameterHeight">36dp</dimen>
+    <dimen name="marginTopFragmentMode">24dp</dimen>
+    <dimen name="marginStartFragmentMode">12dp</dimen>
+    <dimen name="marginEndFragmentMode">12dp</dimen>
+    <dimen name="textSizeFragmentMode">20sp</dimen>
+    <dimen name="contentPadding">6dp</dimen>
+    <dimen name="layoutMargin">6dp</dimen>
+    <dimen name="marginEndItemCharacter">20dp</dimen>
+    <dimen name="textSizeItemCharacter">20sp</dimen>
+    <dimen name="paddingItemCharacter">20dp</dimen>
+</resources>

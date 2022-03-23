@@ -4,48 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/background">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        app:title="Details"
-        app:titleTextColor="@color/white"
-        app:navigationIcon="?attr/homeAsUpIndicator"
-        android:background="@color/purple_500"/>
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            app:title="Info"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:navigationIconTint="@color/white"
+            android:background="@color/dark_blue_500"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
-        android:id="@+id/nameCharacter"
+        android:id="@+id/name_character"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/text_color"
         tools:text="Name"/>
-    <ImageView
-        android:id="@+id/imageViewRick"
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/image_view_rick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
         android:adjustViewBounds="true"
-        tools:ignore="ContentDescription"/>
-
+        tools:ignore="ContentDescription"
+        app:siRadius="20dp"
+         />
 
     <TextView
-        android:id="@+id/textViewStatus"
+        android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="20sp"
+        android:textSize="17sp"
+        android:textColor="@color/text_color"
         tools:text="Alive"/>
 
     <TextView
-        android:id="@+id/textViewSpecies"
+        android:id="@+id/species"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="20sp"
+        android:textSize="17sp"
+        android:textColor="@color/text_color"
         tools:text="Human"/>
 </LinearLayout>
