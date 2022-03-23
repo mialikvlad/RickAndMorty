@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'androidx.navigation.safeargs'
+    id 'kotlin-kapt'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -45,6 +47,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    implementation 'com.google.maps.android:android-maps-utils:1.3.3'
+    implementation "com.google.android.gms:play-services-maps:18.0.2"
+    implementation "com.google.android.gms:play-services-location:19.0.1"
+
     def nav_version = "2.3.5"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
@@ -57,4 +63,26 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    implementation "androidx.fragment:fragment-ktx:1.4.1"
+
+    // Lifecycle
+    def lifecycleVersion = "2.4.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
+
+    // Coroutines
+    def coroutinesVersion = "1.5.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    def paging_version ="3.1.0"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+
+    def koinVersion = "3.1.5"
+    implementation "io.insert-koin:koin-android:$koinVersion"
+
+    //shape image view
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+
+    //roundedImageView
+    /*implementation 'com.makeramen:roundedimageview:2.3.0'*/
 }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_list"
+    app:startDestination="@id/list">
+
+    <fragment
+        android:id="@+id/list"
+        android:name="com.example.rickmorty.presentation.list.ListFragment"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/to_details"
+            app:destination="@+id/details"
+            app:enterAnim="@anim/to_left"
+            app:exitAnim="@anim/from_right"
+            app:popEnterAnim="@anim/to_right"
+            app:popExitAnim="@anim/from_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/details"
+        android:name="com.example.rickmorty.presentation.details.DetailsFragment"
+        tools:layout="@layout/fragment_details">
+
+        <argument
+            android:name="name"
+            app:argType="string"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.example.rickmorty.presentation.fragment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings">
+        <!--<action
+            android:id="@+id/action_settings_fragment"
+            app:destination="@+id/mode_fragment"/>-->
+    </fragment>
+    <!--<fragment
+        android:id="@+id/mode_fragment"
+        android:name="com.example.rickmorty.presentation.fragment.ModeFragment"
+        android:label="App Mode"
+        tools:layout="@layout/fragment_mode"/>-->
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.example.rickmorty.presentation.fragment.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map"/>
+</navigation>
